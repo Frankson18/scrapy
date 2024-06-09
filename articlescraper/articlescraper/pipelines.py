@@ -10,4 +10,13 @@ from itemadapter import ItemAdapter
 
 class ArticlescraperPipeline:
     def process_item(self, item, spider):
+        adapter = ItemAdapter(item)
+        titles = adapter.get('title')
+        for title in titles: 
+            adapter['title'] = title.replace('\n', '').strip()
+        
+        authors = adapter.get('author')
+        
+        adapter['author'] = ''.join(authors).replace(' ,', ',').replace(' and', 'and').strip()
+
         return item
