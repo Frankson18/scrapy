@@ -1,4 +1,4 @@
-# Scrapy Articles  and Flask Integration Project with BigQuery
+# Scrapy Articles and Flask Integration Project with BigQuery
 
 This project integrates a Scrapy spider with a Flask API to scrape articles, store them in Google BigQuery, and provide a search functionality through a REST API.
 
