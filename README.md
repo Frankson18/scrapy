@@ -48,7 +48,8 @@ Update the following variables in settings.py and app.py with your actual Google
 3. **Access the API:**
     ```
      http://127.0.0.1:5000/search?q=exemple
-
 ## Results
-![Scrapy results](img/table_bq.png)
-![Api results](img/flask_api.png)
+### Scrapy results
+![Scrapy results](articlescraper/img/table_bq.png)
+### Api results
+![Api results](articlescraper/img/flask_api.png)
