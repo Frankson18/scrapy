@@ -1,0 +1,4 @@
+
+Flask==3.0.3
+Scrapy==2.11.2
+google-cloud-bigquery==3.24.0
