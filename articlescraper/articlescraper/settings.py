@@ -64,7 +64,13 @@ ROBOTSTXT_OBEY = True
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    "articlescraper.pipelines.ArticlescraperPipeline": 300,
+   'articlescraper.pipelines.BigQueryPipeline': 400,
 }
+
+BIGQUERY_PROJECT_ID = 'scrapy-articles'
+BIGQUERY_DATASET_ID = 'the_guardian_articles'
+BIGQUERY_TABLE_ID = 'articles'
+GOOGLE_APPLICATION_CREDENTIALS = 'C:/Users/frank/OneDrive/Documentos/scrapy/articlescraper/articlescraper/scrapy-articles-c1c64565f67b.json'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
