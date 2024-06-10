@@ -49,3 +49,6 @@ Update the following variables in settings.py and app.py with your actual Google
     ```
      http://127.0.0.1:5000/search?q=exemple
 
+## Results
+![Scrapy results](img/table_bq.png)
+![Api results](img/flask_api.png)
